@@ -1,0 +1,70 @@
+========================================================================
+PSformer training:  dataset=ETTh1  H=720
+  num_encoders: 1
+  num_vars: 7
+  batch_size: 16
+  lr: 0.0001
+  epochs: 300
+  patience: 30
+  seed: 1
+  sam_rho: 0.6
+  revin_stat_window: None
+  revin_affine: False
+========================================================================
+Loaders ready -- train=463 val=135 test=136 batches
+Model parameters: full=372,528 encoder-only=3,168
+Using SAM (rho=0.6) wrapping Adam (lr=0.0001)
+epoch   1/300  train_loss=0.63806  val_mse=1.44004  val_mae=0.83974  (2.6s)  (new best -- saved)
+epoch   2/300  train_loss=0.58755  val_mse=1.42368  val_mae=0.83072  (2.6s)  (new best -- saved)
+epoch   3/300  train_loss=0.57712  val_mse=1.41621  val_mae=0.82697  (2.6s)  (new best -- saved)
+epoch   4/300  train_loss=0.57086  val_mse=1.41387  val_mae=0.82488  (2.8s)  (new best -- saved)
+epoch   5/300  train_loss=0.56764  val_mse=1.41283  val_mae=0.82391  (2.7s)  (new best -- saved)
+epoch   6/300  train_loss=0.56499  val_mse=1.41219  val_mae=0.82369  (2.8s)  (new best -- saved)
+epoch   7/300  train_loss=0.56313  val_mse=1.41211  val_mae=0.82228  (2.8s)  (new best -- saved)
+epoch   8/300  train_loss=0.56206  val_mse=1.41741  val_mae=0.82260  (2.8s)  (no improve 1/30)
+epoch   9/300  train_loss=0.56091  val_mse=1.41052  val_mae=0.82162  (2.9s)  (new best -- saved)
+epoch  10/300  train_loss=0.55953  val_mse=1.40991  val_mae=0.82205  (2.8s)  (new best -- saved)
+epoch  11/300  train_loss=0.55887  val_mse=1.40980  val_mae=0.82121  (2.8s)  (new best -- saved)
+epoch  12/300  train_loss=0.55802  val_mse=1.41907  val_mae=0.82205  (2.7s)  (no improve 1/30)
+epoch  13/300  train_loss=0.55742  val_mse=1.40990  val_mae=0.82173  (2.8s)  (no improve 2/30)
+epoch  14/300  train_loss=0.55676  val_mse=1.41246  val_mae=0.82180  (2.8s)  (no improve 3/30)
+epoch  15/300  train_loss=0.55632  val_mse=1.40759  val_mae=0.82147  (2.8s)  (new best -- saved)
+epoch  16/300  train_loss=0.55597  val_mse=1.41490  val_mae=0.82161  (2.8s)  (no improve 1/30)
+epoch  17/300  train_loss=0.55530  val_mse=1.41824  val_mae=0.82164  (2.7s)  (no improve 2/30)
+epoch  18/300  train_loss=0.55471  val_mse=1.41512  val_mae=0.82226  (2.7s)  (no improve 3/30)
+epoch  19/300  train_loss=0.55437  val_mse=1.42482  val_mae=0.82199  (2.8s)  (no improve 4/30)
+epoch  20/300  train_loss=0.55357  val_mse=1.41468  val_mae=0.82262  (2.8s)  (no improve 5/30)
+epoch  21/300  train_loss=0.55331  val_mse=1.41705  val_mae=0.82252  (2.9s)  (no improve 6/30)
+epoch  22/300  train_loss=0.55302  val_mse=1.41807  val_mae=0.82151  (2.6s)  (no improve 7/30)
+epoch  23/300  train_loss=0.55213  val_mse=1.41929  val_mae=0.82215  (2.8s)  (no improve 8/30)
+epoch  24/300  train_loss=0.55193  val_mse=1.41300  val_mae=0.82161  (2.6s)  (no improve 9/30)
+epoch  25/300  train_loss=0.55157  val_mse=1.41788  val_mae=0.82222  (2.7s)  (no improve 10/30)
+epoch  26/300  train_loss=0.55082  val_mse=1.42495  val_mae=0.82317  (2.8s)  (no improve 11/30)
+epoch  27/300  train_loss=0.55069  val_mse=1.42362  val_mae=0.82251  (2.6s)  (no improve 12/30)
+epoch  28/300  train_loss=0.54991  val_mse=1.42120  val_mae=0.82200  (2.6s)  (no improve 13/30)
+epoch  29/300  train_loss=0.54955  val_mse=1.42852  val_mae=0.82295  (2.7s)  (no improve 14/30)
+epoch  30/300  train_loss=0.54871  val_mse=1.41725  val_mae=0.82309  (2.8s)  (no improve 15/30)
+epoch  31/300  train_loss=0.54849  val_mse=1.42561  val_mae=0.82355  (2.7s)  (no improve 16/30)
+epoch  32/300  train_loss=0.54774  val_mse=1.42985  val_mae=0.82463  (2.8s)  (no improve 17/30)
+epoch  33/300  train_loss=0.54723  val_mse=1.42985  val_mae=0.82480  (2.8s)  (no improve 18/30)
+epoch  34/300  train_loss=0.54700  val_mse=1.42491  val_mae=0.82358  (2.6s)  (no improve 19/30)
+epoch  35/300  train_loss=0.54631  val_mse=1.41860  val_mae=0.82244  (2.7s)  (no improve 20/30)
+epoch  36/300  train_loss=0.54584  val_mse=1.43059  val_mae=0.82481  (2.7s)  (no improve 21/30)
+epoch  37/300  train_loss=0.54521  val_mse=1.43177  val_mae=0.82422  (2.8s)  (no improve 22/30)
+epoch  38/300  train_loss=0.54472  val_mse=1.42796  val_mae=0.82454  (2.8s)  (no improve 23/30)
+epoch  39/300  train_loss=0.54412  val_mse=1.42929  val_mae=0.82457  (2.8s)  (no improve 24/30)
+epoch  40/300  train_loss=0.54352  val_mse=1.42159  val_mae=0.82385  (2.9s)  (no improve 25/30)
+epoch  41/300  train_loss=0.54329  val_mse=1.42940  val_mae=0.82499  (2.8s)  (no improve 26/30)
+epoch  42/300  train_loss=0.54248  val_mse=1.43083  val_mae=0.82468  (2.7s)  (no improve 27/30)
+epoch  43/300  train_loss=0.54207  val_mse=1.42982  val_mae=0.82528  (2.8s)  (no improve 28/30)
+epoch  44/300  train_loss=0.54150  val_mse=1.42157  val_mae=0.82425  (2.8s)  (no improve 29/30)
+epoch  45/300  train_loss=0.54103  val_mse=1.42451  val_mae=0.82385  (2.8s)  (no improve 30/30)
+
+Early stopping triggered after epoch 45 (no improvement for 30 epochs).
+
+========================================================================
+DONE.  Best val MSE: 1.4076
+Test MSE at best val: 0.4460
+Test MAE at best val: 0.4617
+Checkpoint: ./checkpoints/psformer_ETTh1_H720.pt
+========================================================================
