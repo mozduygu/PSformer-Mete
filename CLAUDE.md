@@ -66,3 +66,11 @@ Update `README.md` whenever results, commands, or code structure change.
 - Datasets present: ETTh1/ETTh2/ETTm1/ETTm2. Missing:
   weather/electricity/exchange/traffic (`scripts/download_data.sh` helps).
 - Hyperparameters live in `utils/configs.py` (do not hardcode elsewhere).
+
+## Git / Submission Workflow
+
+- Repository remote: `git@github.com:mozduygu/PSformer-Mete.git` or `https://github.com/mozduygu/PSformer-Mete`
+- Main branch: `main`
+- Before making changes, check:
+  ```bash
+  git stat
