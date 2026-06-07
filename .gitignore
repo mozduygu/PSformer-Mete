@@ -1,0 +1,7 @@
+# Virtual environment created by scripts/setup_env.sh
+psformer-env/
+.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]

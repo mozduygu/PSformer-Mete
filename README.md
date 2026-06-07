@@ -95,11 +95,48 @@ psformer/
 
 ## Installation
 
+Requires **Python 3.10+** (the code uses `X | None` type-hint syntax). The only
+third-party dependencies are `torch`, `numpy`, and `pandas` (see
+`requirements.txt`).
+
+### Option A — one-step setup script (recommended)
+
+This creates a virtual environment named `psformer-env` and installs everything
+into it:
+
 ```bash
-pip install torch numpy pandas
+bash scripts/setup_env.sh
 ```
 
-(A CUDA-capable GPU is recommended but not required; the code falls back to CPU.)
+Then **activate** the environment (do this in every new shell before running):
+
+```bash
+source psformer-env/bin/activate
+```
+
+Verify it works, and run anything from the "Running" section below:
+
+```bash
+python -m experiments.test_param_count
+```
+
+When you are done, deactivate with `deactivate`.
+
+### Option B — manual
+
+```bash
+python -m venv psformer-env
+source psformer-env/bin/activate
+pip install -r requirements.txt        # or: pip install torch numpy pandas
+```
+
+A CUDA-capable GPU is used automatically if available; otherwise the code falls
+back to CPU. The dataset download helper (`scripts/download_data.sh`) additionally
+uses the system tools `bash` and `curl`.
+
+This dependency set is sufficient to run the full pipeline — parameter-count
+check, training, evaluation, custom forecasting, and reporting (all verified
+end-to-end inside `psformer-env`).
 
 ## Running
 
