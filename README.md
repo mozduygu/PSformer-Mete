@@ -102,7 +102,9 @@ third-party dependencies are `torch`, `numpy`, and `pandas` (see
 ### Option A — one-step setup script (recommended)
 
 This creates a virtual environment named `psformer-env` and installs everything
-into it:
+into it.
+
+**Linux / macOS:**
 
 ```bash
 bash scripts/setup_env.sh
@@ -113,6 +115,21 @@ Then **activate** the environment (do this in every new shell before running):
 ```bash
 source psformer-env/bin/activate
 ```
+
+**Windows (Command Prompt):**
+
+```bat
+scripts\setup_env.bat
+```
+
+Then activate it:
+
+```bat
+psformer-env\Scripts\activate.bat
+```
+
+(The `.bat` runs in the default Command Prompt with no execution-policy setup.
+The `.sh` and `.bat` scripts are equivalent — pick the one for your platform.)
 
 Verify it works, and run anything from the "Running" section below:
 
